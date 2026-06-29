@@ -1,0 +1,143 @@
+{
+  "session_start": "20260502_160058",
+  "total_frames": 242,
+  "active_domain": "elderly",
+  "fall_events": [
+    {
+      "timestamp": "2026-05-02T16:00:11.886357",
+      "frame_idx": 56,
+      "fall_prob": 0.6541917324066162,
+      "risk_score": 0.28854129393585026,
+      "risk_class": 0,
+      "domain": "elderly"
+    },
+    {
+      "timestamp": "2026-05-02T16:00:12.551834",
+      "frame_idx": 58,
+      "fall_prob": 0.6202879548072815,
+      "risk_score": 0.22279450623318553,
+      "risk_class": 0,
+      "domain": "elderly"
+    },
+    {
+      "timestamp": "2026-05-02T16:00:12.866212",
+      "frame_idx": 59,
+      "fall_prob": 0.7267293930053711,
+      "risk_score": 0.21608322765678167,
+      "risk_class": 0,
+      "domain": "elderly"
+    },
+    {
+      "timestamp": "2026-05-02T16:00:13.345235",
+      "frame_idx": 60,
+      "fall_prob": 0.7232905626296997,
+      "risk_score": 0.20943690417334437,
+      "risk_class": 0,
+      "domain": "elderly"
+    },
+    {
+      "timestamp": "2026-05-02T16:00:13.673911",
+      "frame_idx": 61,
+      "fall_prob": 0.7114580273628235,
+      "risk_score": 0.2298333654180169,
+      "risk_class": 0,
+      "domain": "elderly"
+    },
+    {
+      "timestamp": "2026-05-02T16:00:14.076378",
+      "frame_idx": 62,
+      "fall_prob": 0.676697850227356,
+      "risk_score": 0.24591435492038727,
+      "risk_class": 0,
+      "domain": "elderly"
+    },
+    {
+      "timestamp": "2026-05-02T16:00:14.421756",
+      "frame_idx": 63,
+      "fall_prob": 0.6922956109046936,
+      "risk_score": 0.2395085422322154,
+      "risk_class": 0,
+      "domain": "elderly"
+    },
+    {
+      "timestamp": "2026-05-02T16:00:14.799879",
+      "frame_idx": 64,
+      "fall_prob": 0.6375715732574463,
+      "risk_score": 0.3497894098982215,
+      "risk_class": 0,
+      "domain": "elderly"
+    },
+    {
+      "timestamp": "2026-05-02T16:00:15.827039",
+      "frame_idx": 67,
+      "fall_prob": 0.7807549834251404,
+      "risk_score": 0.4884251015027985,
+      "risk_class": 1,
+      "domain": "elderly"
+    },
+    {
+      "timestamp": "2026-05-02T16:00:16.201825",
+      "frame_idx": 68,
+      "fall_prob": 0.6393013596534729,
+      "risk_score": 0.5026675807312131,
+      "risk_class": 2,
+      "domain": "elderly"
+    },
+    {
+      "timestamp": "2026-05-02T16:00:16.806200",
+      "frame_idx": 70,
+      "fall_prob": 0.7409315705299377,
+      "risk_score": 0.49905144050717354,
+      "risk_class": 1,
+      "domain": "elderly"
+    },
+    {
+      "timestamp": "2026-05-02T16:00:17.170251",
+      "frame_idx": 71,
+      "fall_prob": 0.7882689237594604,
+      "risk_score": 0.49661582545377314,
+      "risk_class": 1,
+      "domain": "elderly"
+    },
+    {
+      "timestamp": "2026-05-02T16:00:17.471249",
+      "frame_idx": 72,
+      "fall_prob": 0.6836349964141846,
+      "risk_score": 0.48646074160933495,
+      "risk_class": 1,
+      "domain": "elderly"
+    },
+    {
+      "timestamp": "2026-05-02T16:00:18.104310",
+      "frame_idx": 74,
+      "fall_prob": 0.655247688293457,
+      "risk_score": 0.48423941439250484,
+      "risk_class": 1,
+      "domain": "elderly"
+    },
+    {
+      "timestamp": "2026-05-02T16:00:19.113276",
+      "frame_idx": 77,
+      "fall_prob": 0.7961375117301941,
+      "risk_score": 0.6341460656840354,
+      "risk_class": 2,
+      "domain": "elderly"
+    },
+    {
+      "timestamp": "2026-05-02T16:00:19.735128",
+      "frame_idx": 79,
+      "fall_prob": 0.7086203098297119,
+      "risk_score": 0.5485182023840025,
+      "risk_class": 2,
+      "domain": "elderly"
+    },
+    {
+      "timestamp": "2026-05-02T16:00:20.631423",
+      "frame_idx": 82,
+      "fall_prob": 0.622789204120636,
+      "risk_score": 0.5721345157362521,
+      "risk_class": 2,
+      "domain": "elderly"
+    }
+  ]
+}

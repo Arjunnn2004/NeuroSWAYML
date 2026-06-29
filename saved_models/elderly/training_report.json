@@ -1,0 +1,43 @@
+{
+  "domain": "elderly",
+  "class_names": [
+    "NORMAL_GAIT",
+    "MILD_FALL_RISK",
+    "HIGH_FALL_RISK"
+  ],
+  "gait": {
+    "rf_val_acc": 0.992152466367713,
+    "xgb_val_acc": 0.9910313901345291,
+    "ens_val_acc": 0.9910313901345291,
+    "confusion_matrix": [
+      [
+        635,
+        3,
+        1
+      ],
+      [
+        0,
+        148,
+        3
+      ],
+      [
+        0,
+        1,
+        101
+      ]
+    ]
+  },
+  "lstm": {
+    "best_val_acc": 0.9411764705882353
+  },
+  "autoencoder": {
+    "threshold": 0.7274703592061992,
+    "normal_score_mean": 0.08922863229755966,
+    "abnormal_score_mean": 0.31703293857651976,
+    "separation": 0.2278043062789601
+  },
+  "fall": {
+    "fall_val_acc": 0.9876681614349776
+  },
+  "saved_at": "2026-03-03T17:32:48"
+}

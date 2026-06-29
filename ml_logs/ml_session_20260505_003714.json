@@ -1,0 +1,55 @@
+{
+  "session_start": "20260505_003714",
+  "total_frames": 1559,
+  "active_domain": "elderly",
+  "fall_events": [
+    {
+      "timestamp": "2026-05-05T00:30:37.737843",
+      "frame_idx": 197,
+      "fall_prob": 0.8617255687713623,
+      "risk_score": 0.555526515468955,
+      "risk_class": 2,
+      "domain": "elderly"
+    },
+    {
+      "timestamp": "2026-05-05T00:30:37.958899",
+      "frame_idx": 198,
+      "fall_prob": 0.8461014032363892,
+      "risk_score": 0.5139664323069155,
+      "risk_class": 2,
+      "domain": "elderly"
+    },
+    {
+      "timestamp": "2026-05-05T00:37:13.363832",
+      "frame_idx": 1556,
+      "fall_prob": 0.896065890789032,
+      "risk_score": 0.6692902771756053,
+      "risk_class": 2,
+      "domain": "elderly"
+    },
+    {
+      "timestamp": "2026-05-05T00:37:13.611356",
+      "frame_idx": 1557,
+      "fall_prob": 0.9087554812431335,
+      "risk_score": 0.668136393185705,
+      "risk_class": 2,
+      "domain": "elderly"
+    },
+    {
+      "timestamp": "2026-05-05T00:37:13.839173",
+      "frame_idx": 1558,
+      "fall_prob": 0.9199120402336121,
+      "risk_score": 0.6735957437194884,
+      "risk_class": 2,
+      "domain": "elderly"
+    },
+    {
+      "timestamp": "2026-05-05T00:37:14.107744",
+      "frame_idx": 1559,
+      "fall_prob": 0.8980748057365417,
+      "risk_score": 0.6069708177819848,
+      "risk_class": 2,
+      "domain": "elderly"
+    }
+  ]
+}

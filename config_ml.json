@@ -1,0 +1,107 @@
+{
+  "mediapipe": {
+    "model_complexity": 0,
+    "min_detection_confidence": 0.6,
+    "min_tracking_confidence": 0.6,
+    "use_world_landmarks": true
+  },
+  "inference": {
+    "use_threading": true,
+    "frame_queue_size": 2,
+    "sequence_length": 60,
+    "calibration_frames": 90,
+    "device": "cpu"
+  },
+  "dataset": {
+    "physionet_db": "gaitpdb",
+    "physionet_local_dir": "data/physionet",
+    "synthetic_samples_per_class": 5000,
+    "test_split": 0.2,
+    "val_split": 0.1,
+    "random_seed": 42
+  },
+  "training": {
+    "rf_n_estimators": 200,
+    "rf_max_depth": 15,
+    "xgb_n_estimators": 200,
+    "xgb_max_depth": 6,
+    "xgb_learning_rate": 0.05,
+    "lstm_hidden_size": 128,
+    "lstm_num_layers": 2,
+    "lstm_dropout": 0.3,
+    "lstm_epochs": 60,
+    "lstm_batch_size": 32,
+    "lstm_lr": 0.001,
+    "ae_hidden_sizes": [32, 16, 8, 16, 32],
+    "ae_epochs": 80,
+    "ae_lr": 0.001,
+    "ae_anomaly_percentile": 95
+  },
+  "ensemble": {
+    "rf_weight": 0.30,
+    "xgb_weight": 0.30,
+    "lstm_weight": 0.30,
+    "ae_weight": 0.10,
+    "warning_threshold": 0.40,
+    "critical_threshold": 0.65
+  },
+  "classes": {
+    "0": "NORMAL",
+    "1": "WARNING",
+    "2": "HIGH_RISK"
+  },
+  "domains": {
+    "default_active": "neurodegenerative",
+    "neurodegenerative": {
+      "display_name": "Neuro (PD / ALS / HD)",
+      "models_subdir": "neuro",
+      "class_names": ["NORMAL", "WARNING", "HIGH_RISK"],
+      "dataset_loader": "DatasetLoader",
+      "key": "1",
+      "description": "Detects gait anomalies associated with Parkinson's disease, ALS, and Huntington's disease using PhysioNet gaitpdb/gaitndd datasets."
+    },
+    "elderly": {
+      "display_name": "Elderly Gait & Fall Risk",
+      "models_subdir": "elderly",
+      "class_names": ["NORMAL_GAIT", "MILD_FALL_RISK", "HIGH_FALL_RISK"],
+      "dataset_loader": "ElderlyLoader",
+      "dataset_dir": "data/physionet/ltmm",
+      "physionet_db": "ltmm/1.0.0",
+      "key": "2",
+      "description": "Assesses fall risk in elderly individuals using the Long-Term Movement Monitoring Database (LTMM) trunk accelerometer data."
+    },
+    "intoxication": {
+      "display_name": "Intoxication / Ataxia",
+      "models_subdir": "intoxication",
+      "class_names": ["SOBER", "MILD_IMPAIRMENT", "INTOXICATED"],
+      "dataset_loader": "IntoxicationLoader",
+      "dataset_dir": "data/physionet/hbedb",
+      "extra_imu_dir": "data/intoxication",
+      "physionet_db": "hbedb/1.0.0",
+      "key": "3",
+      "description": "Detects alcohol/substance-induced gait impairment and ataxia using the Human Balance Evaluation Database (HBEDB) stabilography data."
+    },
+    "congenital": {
+      "display_name": "Congenital / Birth Disorder",
+      "models_subdir": "congenital",
+      "class_names": ["NORMAL", "MILD_DISORDER", "SEVERE_DISORDER"],
+      "dataset_loader": "CongenitalLoader",
+      "dataset_dir": "data/gaitrec",
+      "figshare_doi": "10.6084/m9.figshare.13598962.v1",
+      "key": "4",
+      "description": "Identifies gait abnormalities from congenital and birth-related disorders (cerebral palsy, spina bifida, Down syndrome) using GaitRec bilateral GRF data."
+    }
+  },
+  "output": {
+    "save_logs": true,
+    "log_dir": "ml_logs",
+    "save_fall_frames": true,
+    "fall_frames_dir": "ml_fall_detections"
+  },
+  "visualization": {
+    "panel_alpha": 0.75,
+    "show_confidence_bar": true,
+    "show_feature_debug": false,
+    "show_fps": true
+  }
+}

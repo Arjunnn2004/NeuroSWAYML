@@ -1,0 +1,29 @@
+# NeuroSWAYML - ML-Enhanced Gait & Fall Detection
+# Core Vision & Pose
+mediapipe==0.10.32
+opencv-python==4.11.0.86
+numpy==1.26.4
+
+# ML / Data Science
+scikit-learn==1.8.0
+xgboost==3.2.0
+joblib==1.5.3
+
+# Deep Learning (LSTM + Autoencoder)
+torch==2.10.0
+
+# PhysioNet Dataset Download
+wfdb==4.3.1
+
+# Data Handling
+pandas==3.0.1
+scipy==1.17.0
+tqdm==4.67.3
+
+# Visualization / Evaluation
+matplotlib==3.10.8
+seaborn==0.13.2
+
+# API / Backend
+flask==3.0.3
+flask-cors==4.0.1

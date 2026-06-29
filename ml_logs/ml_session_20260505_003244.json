@@ -1,0 +1,23 @@
+{
+  "session_start": "20260505_003244",
+  "total_frames": 730,
+  "active_domain": "elderly",
+  "fall_events": [
+    {
+      "timestamp": "2026-05-05T00:30:37.737843",
+      "frame_idx": 197,
+      "fall_prob": 0.8617255687713623,
+      "risk_score": 0.555526515468955,
+      "risk_class": 2,
+      "domain": "elderly"
+    },
+    {
+      "timestamp": "2026-05-05T00:30:37.958899",
+      "frame_idx": 198,
+      "fall_prob": 0.8461014032363892,
+      "risk_score": 0.5139664323069155,
+      "risk_class": 2,
+      "domain": "elderly"
+    }
+  ]
+}
